@@ -1,0 +1,95 @@
+@import url(./screenwise.css);
+@import url(./home/home.css);
+@import url(./about/about.css);
+@import url(./project/project.css);
+@import url(./whatwedo/whatwedo.css);
+@import url(./media/media.css);
+@import url(./donation/donation.css);
+@import url(./evnnt/event.css);
+@import url(./contact/contact.css);
+@import url(./menu/menu.css);
+@import url(./volunteer/volunteer.css);
+
+:root {
+  --black: black;
+  --theme: #fe9100;
+  /* --blue: #0480d8; */
+  --blue: crimson;
+  /* --white: white; */
+  --white: rgb(255, 232, 203);
+  --light_gray: #e5e5e5;
+  --light_yellow: #f2c94c;
+  --gray: #525560;
+  /* --body: #f5f5f5; */
+  --body: bisque;
+}
+
+
+.tape {
+  align-items: center;
+  height: 34px;
+  display: none;
+  justify-content: space-between;
+  padding-inline: 50px;
+  background: var(--blue);
+}
+
+.tape div:first-child {
+  display: flex;
+  gap: 12px;
+  color: var(--white);
+  flex-direction: row;
+  align-items: center;
+}
+
+.tape p{
+    font-size: 14px;
+    margin: 0;
+}
+
+body {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--body);
+}
+
+.sections{
+  opacity: 0;
+  transition: 1.3s ease-in;
+}
+
+.show{
+  opacity: 1;
+}
+
+
+.logos a img{
+    width: 20px;
+}
+
+.overflow_off {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    /* border-radius: 20px; */
+    border: 2px solid white;
+    background: var(--gray);
+}
+
+
+@media (min-width: 640px) {
+  .tape {
+    display: flex;
+  }
+}
+
+@media (min-width: 890px) {
+  .overflow_off {
+    overflow: scroll;
+  }
+}

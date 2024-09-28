@@ -1,0 +1,81 @@
+
+.whatwedo_hero h3{
+letter-spacing: 2px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.whatwedo_hero h3 div{
+    width: 54px;
+    height: 2px ;
+    background: var(--black);
+}
+
+.whatwedo_img, .whatwedo_img img{
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+.special_needs{
+    margin-top: 96px;
+    color: var(--white);
+    background: var(--blue);
+    padding: 96px 10px;
+}
+
+.need{
+    display: flex;
+    gap: 4px;
+}
+
+.need div:first-child img{
+    width: 40px;
+}
+
+.needs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width:768px) {
+    .whatwedo_hero h1{
+        font-size: 56px;
+    }
+
+    .special_needs h1{
+        font-size: 56px;
+    }
+
+
+
+    .needs{
+        gap: 32px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .need{
+        width: 35%;
+    }
+
+    .inner_whatwedo{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:890px) {
+    .need{
+        width: 25%;
+    }
+    .special_needs{
+        padding: 96px 110px;
+    }
+
+    .special_needs{
+        padding: 96px 110px;
+    }
+}

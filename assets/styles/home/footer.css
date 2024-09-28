@@ -1,0 +1,102 @@
+footer {
+  margin-top: 90px;
+  padding: 20px;
+  background: var(--black);
+}
+
+footer h1 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--white);
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  padding: 12px 24px;
+}
+
+footer li:first-child {
+  font-size: 14px;
+  color: var(--white);
+}
+
+footer a {
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  color: var(--gray);
+}
+
+footer a:hover {
+  color: var(--light_gray);
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  width: max-content;
+  position: relative;
+}
+
+footer form input[type="text"] {
+  padding: 12px 24px;
+  width: 100%;
+  border: none;
+  border: 1px solid var(--gray);
+  /* border-radius: 4px; */
+  color: var(--white);
+  outline: none;
+  background: transparent;
+}
+
+footer form input[type="submit"] {
+  padding: 14px 24px;
+  position: relative;
+  background: var(--white);
+  color: var(--black);
+  /* border-radius: 4px; */
+  border: none;
+}
+
+.footer_newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 80px 5px;
+    /* padding: 150px 10px; */
+  }
+
+  footer h1{
+    width: 90%;
+    text-align: left;
+  }
+
+  footer form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -50px;
+  }
+
+  .inner_footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer form{
+    flex-direction: row;
+    gap: 0;
+  }
+
+  footer form input[type="text"] {
+    width: 420px;
+  }
+}

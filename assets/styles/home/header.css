@@ -1,0 +1,107 @@
+header{
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, .6);
+    z-index: 1000;
+    width: auto;
+    position: sticky;
+    top: 0;
+}
+
+
+label[for="logo"] a img{
+    width: 190px;
+}
+
+menu{
+    display: flex;
+    padding: 4px 12px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+nav{
+    /* background: var(--blue); */
+    display: none;
+    /* border-radius: 40px; */
+}
+
+nav ul{
+    margin: 0;
+    padding:13px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+nav ul li a{
+    color: var(--gray);
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    color: var(--black);
+}
+
+
+menu div{
+    width: 24px;
+    height: 2px;
+    /* border-radius: 20px; */
+    margin: 2px 0;
+    background: var(--black);
+}
+
+.inner_header{
+    padding-block: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta_header{
+    display: none;
+}
+
+.cta_header a{
+    padding: 16px 32px;
+    /* border-radius: 4px; */
+}
+
+
+.cta_header a{
+    padding: 16px 32px;
+    /* border-radius: 40px; */
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+
+
+@media (min-width:890px) {
+    menu{
+        display: none;
+    }
+    
+    nav{
+        display: block;
+    }
+    .cta_header{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+@media (min-width:1024px) {
+    .inner_header{
+        padding-inline: 75px;
+    }
+}

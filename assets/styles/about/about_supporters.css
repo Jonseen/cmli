@@ -1,0 +1,54 @@
+.supporters{
+    background: var(--blue);
+}
+
+.supporters h3{
+    padding-block: 20px;
+}
+
+
+/* sponsors */
+.sponsors{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+/* logo slider */
+.sponsor_scroller{
+    max-width: 100%;
+}
+
+/* container holding all the images */
+.sponsor_images{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.sponsor_scroller[data-animated="true"] {
+    overflow: hidden;
+    padding-block: 20px;
+    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.sponsor_scroller[data-animated="true"] .sponsor_images{
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scrolling 60s linear infinite;
+}
+
+
+
+/* animation for scroll */
+@keyframes scrolling {
+    to{
+        transform: translate(calc(-50% - 2rem));
+    }
+}
+
+

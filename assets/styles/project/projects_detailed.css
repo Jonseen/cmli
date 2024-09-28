@@ -1,0 +1,36 @@
+.project_section_3{
+    padding-block: 96px;
+    background: var(--theme);
+    color: var(--white);
+}
+
+.inner_project_section-3 {
+    display: flex;
+ 
+    flex-direction: column;
+    gap: 24px;
+}
+
+.each_project{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.project_icon img{
+    width: 40px;
+}
+
+
+@media (min-width:768px) {
+    .inner_project_section-3{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .each_project{
+        /* padding: 20px; */
+        width: 35%;
+    }
+}

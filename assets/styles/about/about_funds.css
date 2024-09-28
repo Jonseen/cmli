@@ -1,0 +1,80 @@
+.funds{
+    display: flex;
+    margin-top: 96px;
+    justify-content: center;
+    align-items: center;
+    background: var(--theme);
+    color: var(--white);
+}
+
+.inner_funds{
+    padding: 40px 8px;
+}
+
+.funds_team{
+    width: 100%;
+}
+
+.funds_team img{
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+.funds_content h3{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 550;
+}
+
+.funds_content h1{
+    font-size: 28px;
+}
+
+.funds_content h2{
+    font-weight: 500;
+}
+
+
+@media (min-width:475px) {
+    .funds{
+    padding-inline: 20px;
+        /* border-radius: 20px; */
+    }
+
+    .funds_credits{
+        justify-content: space-between;
+        display: flex;
+        gap: 24px;
+        justify-content: left;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:768px) {
+    .funds_content h1{
+        font-size: 48px;
+        margin: 4px 0;
+    }
+
+    .each_credit p{
+        margin: 4px 0;
+    }
+}
+
+
+
+@media (min-width:890px) {
+    .inner_funds{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .funds{
+        padding-inline: 120px;
+    }
+
+    .funds_team{
+        width: 150%;
+    }
+}

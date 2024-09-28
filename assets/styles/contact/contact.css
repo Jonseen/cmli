@@ -1,0 +1,116 @@
+.contact_left h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 2px;
+}
+
+.contact_left h3 div {
+  width: 74px;
+  height: 2px;
+  background: var(--black);
+}
+
+.contact_left h1 {
+  font-size: 25px;
+}
+
+.contact_left p {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.contact_right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact_details h3 {
+  font-size: 18px;
+}
+
+.contact_details h3 p {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .inner_contact {
+    padding-block: 80px;
+  }
+  .contact_left h1 {
+    font-size: 32px;
+  }
+
+  .inner_contact {
+    gap: 32px;
+    display: flex;
+  }
+
+  .contact_right {
+    width: 50%;
+  }
+}
+
+/* form */
+#contact_area input[type="submit"] {
+  padding: 16px 32px;
+  /* border-radius: 4px; */
+  background: var(--theme);
+  color: var(--white);
+  border: none;
+}
+
+#contact_area input[type="text"],
+#contact_area input[type="email"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 16px 12px;
+  outline: none;
+  border-bottom: 1px solid var(--gray);
+}
+
+/* #contact_area input[type="text"] #text_details{
+    border: 1px solid var(--gray);
+} */
+
+textarea {
+    margin-block: 24px;
+  width: 100%;
+  padding: 20px;
+  /* border-radius: 20px; */
+  height: 400px;
+}
+
+
+@media (min-width: 768px) {
+  #contact_area div {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #contact_area div label{
+    width: 70%;
+    margin-inline: 80px;
+  }
+}
+
+@media (min-width: 890px) {
+  #contact_area input[type="text"],
+  #contact_area input[type="email"] {
+    width: 100%;
+  }
+
+  .contact_left h1 {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner_contact {
+    padding-inline: 110px;
+  }
+}
